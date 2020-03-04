@@ -34,7 +34,7 @@
 | Remote 	| `git remote -v`                	| Verify the available remote repositories                       	|
 |        	| `git remote add <remote_name> <url>` 	| Add another remote server                  	|
 | Push   	|  `git push`                     	| Sync with remote repository by default (`origin`)                	|
-| Push       	| `git push <remote-shortname> <branch>`      	| Send commits to a remote repository. Example: `git push origin master`   |
+|        	| `git push <remote-shortname> <branch>`      	| Send commits to a remote repository. Example: `git push origin master`   |
 | Clone    	| `git clone <url>`             	| Download remote repository                                  	|
 | Pull     	| `git pull`                    	| Keep repository synchronized with last branch commits       	|
 
