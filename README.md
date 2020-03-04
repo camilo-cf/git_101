@@ -39,6 +39,17 @@
 | Pull     	| `git pull`                    	| Keep repository synchronized with last branch commits       	|
 
 
+## Helpful commands while working on a remote Repository
+
+| Name        	| Command                   	| Description                                                                                                                                                                      	|
+|-------------	|---------------------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Log       	| `git log --author="Name of the Author"`      	| Filter commits with the `--author` flag  |
+|              	| `git log --grep="Text i want to find"`      	| Filter commits with the characters `"Text i want to find"`   |
+|       	| `git log --oneline --graph --decorate --all`                                            	| View all the commits of the repository in `--oneline --graph --decorate`, useful with long log histories and multiple branches               	|
+| Push       	| `git push <remote-shortname> <branch>`      	| Send commits to the remote repository. Example: `git push origin master`   |
+| Shortlog       	| `git shortlog`      	| Groups commits by author  |
+
+
 ## History and conflicts
 
 | Name     	| Command                       	| Description                                                 	|
@@ -66,8 +77,8 @@
 | Merge  	| `git merge <branch>`      	| Commit a branch to the current branch. Finds a common commit (base) between branches and applies all commits that the current branch doesn't have. If there are commits in the current branch that is not in the other branch, a merge commit will be created.                                          	|
 | Rebase 	| `git rebase <branch>`     	| Similar to Merge but different in the order of committing. In Rebase, your commits in front of the base are temporarily removed, commits from another branch are applied to your branch, and finally your commits are applied one by one. There may be conflicts that will be resolved for each commit. 	|
 | Fetch  	| `git fetch`               	| pull = fetch + merge. Download remote updates but do not apply them to the repository. Lets you rebase a branch instead of merge. Fetch and rebase is best for keeping track of development.                                                                                                            	|
-| Tag    	| `git tag [name_tag]`      	| Useful for defining stable versions of the project                                                                                                                                                                                                                                                      	|
-
+| Tag    	| `git tag [name_tag]`      	| Useful for defining stable versions of the project                                                                                                                  
+                     
 ## Other commands
 
 | Name        	| Command                   	| Description                                                                                                                                                                      	|
