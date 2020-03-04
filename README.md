@@ -58,7 +58,7 @@
 |             	| `git diff <commit_a> <commit_b>` 	| Shows the difference between commit_a and commit_b                 	|
 | Checkout 	| `git checkout <commit><file>` 	| Shows how a file or entire repository was in a given commit 	|
 |          	| `git checkout <commit>`       	| Changes the repository to that commit state                 	|
-|          	| `git checkout master`         	| To return the repository at last commit                     	|
+|          	| `git checkout master`         	| To return the repository to the last commit                     	|
 |        	| `git checkout -- <path_or_file>`   	| Undo all non-stage changes since the last commit                   	|
 |        	| `git checkout HEAD -- <path_file>` 	| Undo changes since last commit including stage                     	|
 | Revert 	| `git revert <commit>`              	| Creates a new commit that undoes changes to the specified commit   	|
@@ -69,7 +69,7 @@
 
 | Name   	| Command                   	| Description                                                                                                                                                                                                                                                                                             	|
 |--------	|---------------------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| Branch 	|                           	| Branch master is the default. Development branch make it easy to control                                                                                                                                                                                                                                	|
+| Branch 	|            `git branch `               	| Shows the current branch you are working on. Branch `master` is the default. Development branch make it easy to control                                                                                                                                                                                                                                	|
 |        	| `git branch <new_branch>` 	| Create a new branch                                                                                                                                                                                                                                                                                     	|
 |        	| `git branch -d <branch>`  	| Delete a branch                                                                                                                                                                                                                                                                                         	|
 |        	| `git checkout <branch>`   	| Switch to the branch                                                                                                                                                                                                                                                                                    	|
