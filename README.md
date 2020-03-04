@@ -77,8 +77,8 @@
 | Merge  	| `git merge <branch>`      	| Commit a branch to the current branch. Finds a common commit (base) between branches and applies all commits that the current branch doesn't have. If there are commits in the current branch that is not in the other branch, a merge commit will be created.                                          	|
 | Rebase 	| `git rebase <branch>`     	| Similar to Merge but different in the order of committing. In Rebase, your commits in front of the base are temporarily removed, commits from another branch are applied to your branch, and finally your commits are applied one by one. There may be conflicts that will be resolved for each commit. 	|
 | Fetch  	| `git fetch`               	| pull = fetch + merge. Download remote updates but do not apply them to the repository. Lets you rebase a branch instead of merge. Fetch and rebase is best for keeping track of development.                                                                                                            	|
-| Tag    	| `git tag [name_tag]`      	| Useful for defining stable versions of the project                                                                                                                  
-                     
+| Tag    	| `git tag [name_tag]`      	| Useful for defining stable versions of the project                        |                                                                                          
+
 ## Other commands
 
 | Name        	| Command                   	| Description                                                                                                                                                                      	|
