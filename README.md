@@ -31,10 +31,10 @@
 
 | Name   	| Command                        	| Description                                	|
 |--------	|--------------------------------	|--------------------------------------------	|
-| Remote 	| `git remote -v`                	| Configure the server                       	|
-|        	| `git remote add <remote><url>` 	| Add another remote server                  	|
-| Push   	| `git push -u origin master`    	| Sync with remote repository the first time 	|
-|        	| `git push`                     	| Sync with remote repository                	|
+| Remote 	| `git remote -v`                	| Verify the available remote repositories                       	|
+|        	| `git remote add <remote_name> <url>` 	| Add another remote server                  	|
+| Push   	|  `git push`                     	| Sync with remote repository by default (`origin`)                	|
+| Push       	| `git push <remote-shortname> <branch>`      	| Send commits to a remote repository. Example: `git push origin master`   |
 | Clone    	| `git clone <url>`             	| Download remote repository                                  	|
 | Pull     	| `git pull`                    	| Keep repository synchronized with last branch commits       	|
 
@@ -46,7 +46,6 @@
 | Log       	| `git log --author="Name of the Author"`      	| Filter commits with the `--author` flag  |
 |              	| `git log --grep="Text i want to find"`      	| Filter commits with the characters `"Text i want to find"`   |
 |       	| `git log --oneline --graph --decorate --all`                                            	| View all the commits of the repository in `--oneline --graph --decorate`, useful with long log histories and multiple branches               	|
-| Push       	| `git push <remote-shortname> <branch>`      	| Send commits to the remote repository. Example: `git push origin master`   |
 | Shortlog       	| `git shortlog`      	| Groups commits by author  |
 
 
