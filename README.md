@@ -1,6 +1,6 @@
 # Git 101
 
-[Git](https://git-scm.com/) is a distributed version-control system, created by [Linus Tolvalds](https://en.wikipedia.org/wiki/Linus_Torvalds) in 2005. Git is practical, simplified, fast, efficient, and free and open source. 
+[Git](https://git-scm.com/) is a distributed version control system, created by [Linus Tolvalds](https://en.wikipedia.org/wiki/Linus_Torvalds) in 2005. Git is a practical, simplified, fast, efficient, and free and open source. 
 
 ## First commands
 
@@ -69,12 +69,12 @@
 
 | Name   	| Command                   	| Description                                                                                                                                                                                                                                                                                             	|
 |--------	|---------------------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| Branch 	|            `git branch `               	| Shows the current branch you are working on. Branch `master` is the default. Development branch make it easy to control                                                                                                                                                                                                                                	|
+| Branch 	|            `git branch `               	| Shows the current branch you are working on. Branch `master` is the default. Development branch makes it easy to control                                                                                                                                                                                                                                	|
 |        	| `git branch <new_branch>` 	| Create a new branch                                                                                                                                                                                                                                                                                     	|
 |        	| `git branch -d <branch>`  	| Delete a branch                                                                                                                                                                                                                                                                                         	|
 |        	| `git checkout <branch>`   	| Switch to the branch                                                                                                                                                                                                                                                                                    	|
 | Merge  	| `git merge <branch>`      	| Commit a branch to the current branch. Finds a common commit (base) between branches and applies all commits that the current branch doesn't have. If there are commits in the current branch that is not in the other branch, a merge commit will be created.                                          	|
-| Rebase 	| `git rebase <branch>`     	| Similar to Merge but different in the order of committing. In Rebase, your commits in front of the base are temporarily removed, commits from another branch are applied to your branch, and finally your commits are applied one by one. There may be conflicts that will be resolved for each commit. 	|
+| Rebase 	| `git rebase <branch>`     	| Similar to Merge but different in the order of committing. In Rebase, your commits in front of the base are temporarily removed. Commits from another branch are applied to your branch, and your commits are finally applied one by one. There may be conflicts that will be resolved for each commit. 	|
 | Fetch  	| `git fetch`               	| pull = fetch + merge. Download remote updates but do not apply them to the repository. Lets you rebase a branch instead of merge. Fetch and rebase is best for keeping track of development.                                                                                                            	|
 | Tag    	| `git tag [name_tag]`      	| Useful for defining stable versions of the project                        |                                                                                          
 
@@ -83,12 +83,12 @@
 | Name        	| Command                   	| Description                                                                                                                                                                      	|
 |-------------	|---------------------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
 | Amend       	| `git commit --amend`      	| Changes the last commit                                                                                                                                                          	|
-| Stash       	| `git stash`               	| Save Working Directory Changes. Allows you to rebase, merge, switch branches without the need to commit.                                                                         	|
+| Stash       	| `git stash`               	| Save Working Directory Changes. It allows you to rebase, merge, switch branches without the need to commit.                                                                         	|
 |             	| `git stash list`          	| Applies the last stored stash.                                                                                                                                                   	|
 |             	| `git stash pop`           	|                                                                                                                                                                                  	|
-| Cherry Pick 	| `git cherrypick <commit>` 	| Applies commit changes to the current branch. Create a new commit. Useful to retrieve history                                                                                    	|
-| Blame       	| `git blame`               	| Shows changes made to one file per line. Show author and commit that line was made. Useful to check when changes were made, why, and by whom                                     	|
-| Bisect      	| `git bisect`              	| Lets you do a binary search in commits to find a change. Useful for changes that have changed behavior and cannot be easily identified by code. When the change may be quite old 	|
+| Cherry Pick 	| `git cherrypick <commit>` 	| Applies to commit changes to the current branch. Create a new commit. Useful to retrieve history                                                                                    	|
+| Blame       	| `git blame`               	| Shows changes made to one file per line. Show the author and commit that line was made. Useful to check when changes were made, why, and by whom                                     	|
+| Bisect      	| `git bisect`              	| Let's you do a binary search in commits to find a change. Useful for changes that have changed behavior and cannot be easily identified by code. When the change may be quite old 	|
 
 
 ---
